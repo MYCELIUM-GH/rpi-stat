@@ -7,7 +7,31 @@ One day I desided to make small status screen for my RPI. Initially I used 3D pr
 
 Connections - W.I.P
 
-Required libs - W.I.P
+### Required libs - W.I.P
+A few packages are needed during installation of the Python modules.
+
+* the SWIG code generator (to build lgpio.py from the C library)
+* the Python development files (to build lgpio.py)
+* the Python set up tools (to install lgpio.py and rgpio.py) 
+
+These packages may be installed with the following commands:
+```sh
+sudo apt install swig python-dev python3-dev
+sudo apt install python-setuptools python3-setuptools
+```
+
+```sh
+pip install psutil
+pip install adafruit-blinka
+pip install adafruit-circuitpython-ssd1306
+pip install Pillow
+pip install spotipy
+pip install Flask
+pip install flask-CORS
+
+
+```
+
 
 For spotify integration you have to create new web app here: https://developer.spotify.com/dashboard/ and set the following environment variables:
 
